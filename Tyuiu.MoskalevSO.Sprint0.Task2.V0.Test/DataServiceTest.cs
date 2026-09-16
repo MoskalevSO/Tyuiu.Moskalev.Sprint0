@@ -8,12 +8,12 @@ namespace Tyuiu.MoskalevSO.Sprint0.Task2.V0.Test
         [TestMethod]
         public void CheckGetMessageValid()
         {
-            // Область создания методов тестирования, методов из библиотеки
-            var name = "рыба";
+            
+            var name = "Степан";
             var res = DataService.GetMessage(name);
 
-            //Вызываем класс Assert и метод AreEqual
-            Assert.AreEqual("Привет..., рыба", res);
+
+            Assert.AreEqual("Привет..., Степан", res);
         }
     }
 }
